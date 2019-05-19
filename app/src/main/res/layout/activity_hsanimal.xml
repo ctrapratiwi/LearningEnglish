@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".HSAnimalActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:id="@+id/titik"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High Score :"
+        android:layout_above="@+id/titik"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/highscore"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="37dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score :"
+        android:id="@+id/totalscore"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/highscore"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="37dp" />
+    <ImageButton
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/highscore"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tryagain"
+        android:onClick="onClick"/>
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/back"
+        android:id="@+id/back"/>
+    <ImageButton
+        android:layout_width="70dp"
+        android:id="@+id/home"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/home"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"/>
+
+
+</RelativeLayout>
